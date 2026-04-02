@@ -71,10 +71,10 @@ function createCompanyLogo(array $parameters = []): string {
 
 <?php
 echo createCompanyLogo([
-                    'url'         => 'www.meinfenster24deasc',
-                    'logoSrc'     => 'hello bols',
-                    'brandName'   => 'meinfenster24.deeee',
-                    'slogan'      => 'Fenster - Türen - Rollläden cdscasc'
+                  //  'url'         => 'www.meinfenster24deasc',
+                //    'logoSrc'     => 'hello bols',
+                //    'brandName'   => 'meinfenster24.deeee',
+                  //  'slogan'      => 'Fenster - Türen - Rollläden cdscasc'
                //     'brandColor'  => '#00173a',
               //      'sloganColor' => '#0460BB'
                 ]);
