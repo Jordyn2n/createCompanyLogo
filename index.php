@@ -35,13 +35,14 @@ function createCompanyLogo(array $parameters = []): string {
     $brandName = $limitCharacters($config['brandName'], 30);
     $slogan    = $limitCharacters($config['slogan'], 30);
     
-    $logoPath = file_exists($config['logoSrc']) ? $config['logoSrc'] : $defaultParameters['logoSrc'];
+    $src = $config['logoSrc'];
+    $logoPath = (filter_var($src, FILTER_VALIDATE_URL) || file_exists($src)) ? $src : $defaultParameters['logoSrc'];
                                                                                                                             //HTML
     $html  = '<div id="menuLeisteKleinInner_Logo">';
     $html .= '  <a href=' . htmlspecialchars($url) . ' style="text-decoration: none; color: inherit;">';
     $html .= '    <div id="logoErsatz">';
     $html .= '      <div id="logoErsatzGrafik">';                                                                           //Logo svg icon
-    $html .= '        <img class="logoErsatzGrafik" src="' . htmlspecialchars($logoPath) . '">';
+    $html .= '        <img class="logoErsatzGrafik" src="' . htmlspecialchars($logoPath) . '" alt="Logo">';
     $html .= '      </div>';
     $html .= '      <div id="logoErsatzTexte">';                                                                                   
     $html .= '        <div id="logoErsatzText1" style="color: ' . htmlspecialchars($brandColor) . ';">';                    //Brand Name
