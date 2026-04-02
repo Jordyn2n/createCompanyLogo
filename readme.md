@@ -1,6 +1,6 @@
 # CreateCompanyLogo 🎨
 
-Ein PHP-basiertes Tool zur dynamischen Generierung von Firmenlogos mit Slogan und individueller Farbgestaltung.
+Ein PHP-basiertes Tool zur dynamischen Generierung von Firmenlogos mit Slogan und individueller Farbgestaltung. 
 
 ## 🚀 Features
 *   **Dynamische Logos:** Erzeugt HTML-Logo-Bausteine basierend auf einem Parameter-Array.
